@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "FigtreeMedium";
+    src: url(./assets/fonts/static/Figtree-Medium.ttf);
+}
+
+@font-face {
+    font-family: "FigtreeExtraBold";
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1.4px solid black;
+    border-radius: 15px;
+    box-shadow: 6px 6px;
+    padding: 17px;
+}
+
+.img-logo{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.category{
+    background-color:hsl(47, 88%, 63%);
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: "FigtreeExtraBold";
+    font-weight: 14px;
+    color: hsl(0, 0%, 7%);
+}
+
+.date{
+    font-family: "FigtreeMedium";
+    color: hsl(0, 0%, 7%);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.title{
+    font-family: "FigtreeExtraBold";
+    font-weight: 24px;
+    color: hsl(0, 0%, 7%);  
+    transition: color 0.3s ease-in; 
+}
+
+.title:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+.text{
+    font-family: "FigtreeMedium";
+    color: hsl(0, 0%, 42%);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.author-details{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author{
+    width: 35px;
+    height: 35px;
+}
+
+.author-name{
+    font-family: "FigtreeExtraBold";
+    font-weight: 14px;
+    color: hsl(0, 0%, 7%);
+    margin: 0;  
+}
